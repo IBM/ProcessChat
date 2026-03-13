@@ -1,2 +1,29 @@
-# ProcessChat
-ProcessChat is a dataset developed by IBM Research. The dataset was introduced in an official IBM Research publication in CODS 2025: “ProcessChat: A Dataset for Business Process Grounded Dialog” by Neelamadhav Gantayat, Avirup Saha and Renuka Sindhgatta.
+# ProcessChat: A Dataset for Business Process Grounded Dialogs
+This repository contains the ProcessChat dataset.
+
+ProcessChat is a process-grounded dataset of conversations with a chatbot assistant that is designed to offer the following types of interactions to the user:
+
+- Guide the user step-by-step through the process by providing details of the next step to execute having the context of the previous steps the user has been guided through.
+- Ask the user to provide information when the process reaches an exclusive gateway to choose the relevant path and guide the user to the appropriate path
+- Inform the user about the actor involved in performing the task
+- Provide the user with the list of activities performed by an actor
+- Inform the user on reaching the end of the process.
+
+The user inputs including the chat context and expected chatbot assistant outputs in the train, validation and test sets are available in the following directories:
+- `data`: contains train.jsonl, valid.jsonl and test.jsonl files for the complete dataset
+- `data_no_constrainedpolicy`: contains train.jsonl, valid.jsonl and test.jsonl files for the dataset without the constrained natural language (CNL) policy rules
+- `data_no_nlpolicy`: contains train.jsonl, valid.jsonl and test.jsonl files for the dataset without the natural language (NL) policy rules
+
+## Attribution Notice
+
+This dataset was created using the data originally released by Sànchez-Ferreres, Van der Aa et al at https://github.com/setzer22/alignment_model_text/tree/master/datasets.
+
+LLMs have been used to synthetically generate the human-assistant conversations using the BPMN process models in the original dataset.
+
+## References
+
+[1] Sànchez-Ferreres, Josep, Han van der Aa, Josep Carmona, and Lluís Padró. "Aligning textual and model-based process descriptions." Data & Knowledge Engineering 118 (2018): 25-40.
+
+[2] Sànchez-Ferreres, Josep, Josep Carmona, and Lluís Padró. "Aligning textual and graphical descriptions of processes through ILP techniques." In International Conference on Advanced Information Systems Engineering, pp. 413-427. Cham: Springer International Publishing, 2017. 
+
+[3] Van der Aa, Han, Henrik Leopold, and Hajo A. Reijers. "Detecting inconsistencies between process models and textual descriptions." In International Conference on Business Process Management, pp. 90-105. Cham: Springer International Publishing, 2015.
