@@ -1,5 +1,5 @@
 # ProcessChat: A Dataset for Business Process Grounded Dialogs
-This repository contains the ProcessChat dataset.
+This repository contains the ProcessChat dataset which accompanies the paper "ProcessChat: A Dataset for Business Process Grounded Dialogs" published by IBM in CODS 2025.
 
 ProcessChat is a process-grounded dataset of conversations with a chatbot assistant that is designed to offer the following types of interactions to the user:
 
@@ -16,9 +16,8 @@ The user inputs including the chat context and expected chatbot assistant output
 
 ## Attribution Notice
 
-This dataset was created using the data originally released by Sànchez-Ferreres, Van der Aa et al at https://github.com/setzer22/alignment_model_text/tree/master/datasets.
-
-LLMs have been used to synthetically generate the human-assistant conversations using the BPMN process models in the original dataset.
+The ProcessChat dataset consists of conversations/dialogs between a user and an assistant. These conversations/dialogs were created by IBM based on BPMN process models and textual descriptions in a publicly available dataset at https://github.com/setzer22/alignment_model_text/tree/master/datasets which was released under the GPL v3 license: https://github.com/setzer22/alignment_model_text/blob/master/LICENSE. This dataset has been described by Sànchez-Ferreres *et al* in [1]. Consequently, while ProcessChat can be regarded as a “derivative” of the above dataset, it is significantly different because the conversations/dialogs in ProcessChat were not present in the above dataset. 
+This data is being released purely for research purposes and not for any commercial use. No IP rights are associated with this dataset.
 
 ## References
 
