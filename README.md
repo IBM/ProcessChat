@@ -1,5 +1,5 @@
 # ProcessChat: A Dataset for Business Process Grounded Dialogs
-This repository contains the ProcessChat dataset which accompanies the paper "ProcessChat: A Dataset for Business Process Grounded Dialogs" published by IBM in CODS 2025.
+This repository contains the ProcessChat dataset which accompanies the paper "ProcessChat: A Dataset for Business Process Grounded Dialogs" authored by Neelamadhav Gantayat, Avirup Saha and Renuka Sindhgatta in CODS 2025.
 
 ProcessChat is a process-grounded dataset of conversations with a chatbot assistant that is designed to offer the following types of interactions to the user:
 
